@@ -55,21 +55,21 @@ var s4 string = `D:\codeStore\golang-stoty.log`
 
 - ### 浮点型
   - float( 32, 64)
-	```go
+```go
 	var n1 float32 = 12.12
 	var n2  = float32(12.12)
 	var n2  float64 = (12.121212312312)
-	```
+```
 
 ------------
 
 
 - ### 其他数字类型
-	- byte
-	- rune
-	- int
-	- uint
-	- uintptr
+ - byte
+ - rune
+ - int
+ - uint
+ - uintptr
 
 ------------
 

@@ -44,7 +44,7 @@ var n3 int16 = (18)
 ```
 - uint( 8, 16, 32, 64 ) 有符号整形
 
-	```go
+```go
 var n1 uint = 18
 var n2 uint8 = (18)
 var n3 uint16 = (18)
@@ -55,11 +55,11 @@ var n3 uint16 = (18)
 
 - ### 浮点型
 	- float( 32, 64)
-```go
-var n1 float32 = 12.12
-var n2  = float32(12.12)
-var n2  float64 = (12.121212312312)
-```
+	```go
+	var n1 float32 = 12.12
+	var n2  = float32(12.12)
+	var n2  float64 = (12.121212312312)
+	```
 
 ------------
 

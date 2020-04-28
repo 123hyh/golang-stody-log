@@ -43,8 +43,6 @@ var s4 string = `D:\codeStore\golang-stoty.log`
 	···
 ```
 
-   ------------
-
  - uint( 8, 16, 32, 64 ) 有符号整形
 
    ```go
@@ -54,10 +52,10 @@ var s4 string = `D:\codeStore\golang-stoty.log`
 	···
 ```
 
- ------------
+------------
 
 
--  ### 浮点型
+- ### 浮点型
   - float( 32, 64)
 
 	```go

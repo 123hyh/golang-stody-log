@@ -34,23 +34,30 @@ var s4 string = `D:\codeStore\golang-stoty.log`
 
 
 - ### 数字类型
- -  int( 8, 16, 32 ,64 ) 无符号整形
+  - int( 8, 16, 32 ,64 ) 无符号整形
 
-   ```go
+```go
 	var n1 int = 18
 	var n2 = int8(18)
 	var n3 int16 = (18)
 	···
 ```
 
- - uint( 8, 16, 32, 64 ) 有符号整形
+***
 
-   ```go
+  - uint( 8, 16, 32, 64 ) 有符号整形
+
+```go
 	var n1 uint = 18
 	var n2 uint8 = (18)
 	var n3 uint16 = (18)
 	···
 ```
+
+
+
+
+
 
 ------------
 
@@ -58,7 +65,7 @@ var s4 string = `D:\codeStore\golang-stoty.log`
 - ### 浮点型
   - float( 32, 64)
 
-	```go
+```go
 	var n1 float32 = 12.12
 	var n2  = float32(12.12)
 	var n2  float64 = (12.121212312312)
@@ -68,11 +75,11 @@ var s4 string = `D:\codeStore\golang-stoty.log`
 
 
 - ### 其他数字类型
- - byte
- - rune
- - int
- - uint
- - uintptr
+  - byte
+  - rune
+  - int
+  - uint
+  - uintptr
 
 ------------
 

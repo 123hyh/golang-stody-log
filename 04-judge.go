@@ -60,12 +60,20 @@ func forRange() {
 var table = ``
 
 func multiplicationTable(n int) string {
+	// 判断 n
 	if n <= 9 && n > 0 {
+
+		// 拼接字符串
 		for i := 1; i <= n; i++ {
 			table += strconv.Itoa(n) + "*" + strconv.Itoa(i) + "=" + strconv.Itoa(i*n) + "; "
 		}
+
+		//换行符
 		table += "\n"
+
+		//递归 n - 1
 		multiplicationTable(n + 1)
 	}
+
 	return table
 }

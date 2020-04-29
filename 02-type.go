@@ -67,6 +67,18 @@ func stringType() {
 	fmt.Printf("切割后拼接：%v\n", strings.Join(s5, ","))
 
 	fmt.Printf("string end %v\n", "-----------------------------")
+
+	//	字符串修改 (把字符串强制转为 rune类型)
+	s6 := []rune("罗湖")
+	s7 := ""
+
+	fmt.Printf("字符串修改: %v\n", s6)
+	for _, j := range s6 {
+		s7 += string(j)
+	}
+
+	fmt.Printf("s7字符串修改: %v\n", s7)
+
 }
 
 /**
@@ -96,4 +108,7 @@ func initUintType() {
 	var n5 = float64(12.1215678678)
 	fmt.Printf("flot32类型：%v\n", n3)
 	fmt.Printf("flot64类型：%v\n", n4+n5)
+
+	var sum = []int{1, 2, 3, 4}
+	fmt.Printf("%v\n", sum)
 }

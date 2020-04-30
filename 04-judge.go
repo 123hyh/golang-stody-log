@@ -18,6 +18,40 @@ func main() {
 	} else if name == "hyh" {
 		fmt.Printf("%v\n", `青少年`)
 	}
+
+	// switch 判断
+	grade := 2
+	switch grade {
+	case 1:
+		fmt.Printf("%v\n", "是1")
+	case 2, 3:
+		fmt.Printf("%v\n", "是1")
+		fallthrough // 下穿下一个
+	case 4, 5:
+		fmt.Printf("%v\n", "是2")
+	default:
+		fmt.Printf("%v\n", "默认值")
+	}
+
+	// 2
+	switch b := 1; b {
+	case 1:
+		fmt.Printf("%v\n", "默认值")
+	case 2:
+		fmt.Printf("%v\n", "默认值")
+	}
+
+	//  goto 语句
+	var gx = "123"
+	for i, _ := range gx {
+		if i == 2 {
+			goto testGoTo
+		}
+	}
+testGoTo:
+	println(123)
+
+
 	fors()
 }
 

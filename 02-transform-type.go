@@ -20,10 +20,11 @@ func main() {
 			s3 = append(s3, val)
 		}
 	}
+
 	//	int 转 string
 	s5 := strconv.Itoa(1)
 
-	fmt.Printf("int 转 string类型：%v\n", s5)
+	fmt.Printf("int 转 string类型：%#v\n", s5)
 
 
 	fmt.Printf("s1的汉字总长度：%v\n", len(s3))

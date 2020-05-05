@@ -74,13 +74,16 @@ func tody() {
 	arr4 := make([]int, 4, 6)
 	copy(arr4, arr2)
 	fmt.Printf("%v\n", arr4)
+
 	my()
+	hasHan()
 }
 func my() {
 	var arr = [...]int{1, 2, 3}
 	//arr1:=make([]int,3,3)
-	arr2 := make([]int,len(arr),5)
-	copy(arr2,arr[:])
-	arr2 = append(arr2,arr2[2:]...)
+	arr2 := make([]int, len(arr), 5)
+	copy(arr2, arr[:])
+	arr2 = append(arr2, arr2[2:]...)
 	fmt.Printf("%v\n", arr2)
 }
+

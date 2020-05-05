@@ -1,6 +1,10 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+	"unicode"
+)
 
 /**
 map 类型 （key value）散列表
@@ -31,4 +35,47 @@ func main() {
 	arr3["name"] = []int{1, 2, 3, 4}
 	fmt.Printf("%v\n", arr3)
 
+	arr4 := make([]map[string]string, 10, 10)
+	for i := range arr4 {
+		item := make(map[string]string)
+		item["name"] = "黄"
+		arr4[i] = item
+	}
+	fmt.Printf("%v\n", arr4)
+	arr5 := make(map[string][]string, 10)
+	arr5["城市"] = []string{"gz", "sh", "sz"}
+	fmt.Printf("%v\n", arr5)
+	wordNumber()
+	hasHan()
+	judge()
+}
+
+//单词出现的次数
+func wordNumber() {
+	str := "hello word how do you do"
+	str1 := make(map[string]int)
+	for _, val := range strings.Split(str, " ") {
+		if _, ok := str1[val]; ok {
+			str1[val]++
+		} else {
+			str1[val] = 1
+		}
+	}
+	fmt.Printf("%v\n", str1)
+}
+
+//汉字的次数
+func hasHan() {
+	str := "hello黄裕辉"
+	for _, val := range str {
+		if unicode.Is(unicode.Han, val) {
+			fmt.Printf("%v\n", string(val))
+		}
+	}
+}
+
+//回文判断
+func judge() {
+	str := "黄山落叶叶落山黄"
+	for()
 }

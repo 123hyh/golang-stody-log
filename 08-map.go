@@ -28,7 +28,7 @@ func main() {
 	fmt.Printf("%v\n", arr2)
 	//	值为切片的map
 	arr3 := make(map[string][]int, 10)
-	arr3["name"] = []int{1,2,3,4}
+	arr3["name"] = []int{1, 2, 3, 4}
 	fmt.Printf("%v\n", arr3)
 
 }

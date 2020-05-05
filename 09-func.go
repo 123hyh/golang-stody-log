@@ -73,10 +73,10 @@ func main() {
 	//	defer 函数 （defer 关键字 逆序执行）
 	testDefer := func() {
 		fmt.Printf("同步%v\n", 1)
-		defer fmt.Printf("异步%v\n", 2)
+		defer fmt.Printf("异步%v\n\n", 2)
 		fmt.Printf("同步%v\n", 3)
 		defer fmt.Printf("异步%v\n", 4)
-		defer fmt.Printf("异步%v\n\n", 5)
+		defer fmt.Printf("异步%v\n", 5)
 	}
 	testDefer()
 	f0 := func() (x int) {

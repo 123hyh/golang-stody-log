@@ -76,6 +76,5 @@ func hasHan() {
 
 //回文判断
 func judge() {
-	str := "黄山落叶叶落山黄"
-	for()
+	
 }

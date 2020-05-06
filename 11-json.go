@@ -10,14 +10,14 @@ import (
 
 func main() {
 	type Studen struct {
-		Name   string
-		Age    int
-		Gender int
+		Name   string `json:"name"` 
+		Age    int `json:"age"`
+		Gender int `json:"gender"`
 	}
 	type Class struct {
-		Title   string
-		Count   int
-		Studens []*Studen
+		Title   string `json:"title"`
+		Count   int `json:"count"`
+		Studens []*Studen `json:"studens"`
 	}
 	newClass := &Class{Title: "九年级", Count: 20, Studens: make([]*Studen, 0, 20)}
 	for i := 0; i < 20; i++ {

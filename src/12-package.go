@@ -1,6 +1,6 @@
 package main
 
-
-func main()  {
+// 前往testPackage
+func main() {
 
 }

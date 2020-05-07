@@ -9,8 +9,14 @@ import (
 反射
 */
 
+func reflectType(param interface{}) {
+	//获取值的类型对象
+	v := reflect.TypeOf(param)
+	fmt.Printf("%v \n", v.Kind())
+}
+
+//原始值的值信息
 func reflectValue(x interface{}) {
-	//原始值的值信息
 	v := reflect.ValueOf(x).Elem() //根据指针取对应的值 elem()
 
 	t := v.Kind() // 获取值对于的类型种类
@@ -36,6 +42,7 @@ func reflectValue(x interface{}) {
 
 func main() {
 	var a float32 = 3.141592653
+	reflectType(a)
 	var b int8 = 123
 	var c bool = false
 	var m = make(map[string]int)

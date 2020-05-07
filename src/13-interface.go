@@ -82,5 +82,5 @@ func nullInterface() {
 
 // 空接口类型作为 函数参数
 func interParam(param ...interface{}) {
-	println(`123`)
+	println(`123`, param)
 }

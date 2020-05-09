@@ -17,6 +17,7 @@ func reflectType(param interface{}) {
 
 //原始值的值信息
 func reflectValue(x interface{}) {
+
 	v := reflect.ValueOf(x).Elem() //根据指针取对应的值 elem()
 
 	t := v.Kind() // 获取值对于的类型种类

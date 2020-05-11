@@ -45,6 +45,11 @@ func main() {
 	arr5 := make(map[string][]string, 10)
 	arr5["城市"] = []string{"gz", "sh", "sz"}
 	fmt.Printf("%v\n", arr5)
+	// 删除map的元素
+	m2 := make(map[string]string)
+	m2["name"] = "hyh"
+	delete(m2, "name")
+	fmt.Println(`删除map元素`,m2)
 	wordNumber()
 	hasHan()
 	judge()
